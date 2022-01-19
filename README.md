@@ -22,6 +22,7 @@ print(fun.to_6(1051570404137199630024704)) # -> 0000:0000:0000:dead:beef:0000:00
 #### Lint and Format
 
 `pylint ipy2d/`
+
 `black ipy2d/`
 
 #### Test
