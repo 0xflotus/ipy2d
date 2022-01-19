@@ -27,7 +27,7 @@ print(fun.to_6(1051570404137199630024704)) # -> 0000:0000:0000:dead:beef:0000:00
 
 #### Test
 
-If `pytest` is installed, you can run `pytest test/*`
+If `pytest` is installed, you can run `pytest -rxXs test/*`
 
 #### Deploy
 
