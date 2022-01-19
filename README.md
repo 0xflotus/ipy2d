@@ -27,4 +27,4 @@ If `pytest` is installed, you can run `pytest test/*`
 
 * create *dist* `python3 setup.py sdist bdist_wheel`
 * check *dist* `twine check dist/*`
-* publish *dist* `twine upload dist/* ` 
+* publish *dist* `twine upload dist/*` 

@@ -1,4 +1,5 @@
 import netaddr
+import ipaddress
 
 def from_4(ipv4):
     arr = ipv4.split('.')
@@ -22,8 +23,8 @@ def to_4(num):
                                     num >> 0x08 & 0xff, \
                                     num >> 0x00 & 0xff)
                                 
-def to_6(num):
-    return "{0:>04x}:{1:>04x}:{2:>04x}:{3:>04x}:{4:>04x}:{5:>04x}:{6:>04x}:{7:>04x}".format( \
+def to_6(num, compressed=False):
+    ipv6 = "{0:>04x}:{1:>04x}:{2:>04x}:{3:>04x}:{4:>04x}:{5:>04x}:{6:>04x}:{7:>04x}".format( \
         num >> 0x70 & 0xffff, \
         num >> 0x60 & 0xffff, \
         num >> 0x50 & 0xffff, \
@@ -32,3 +33,4 @@ def to_6(num):
         num >> 0x20 & 0xffff, \
         num >> 0x10 & 0xffff, \
         num >> 0x00 & 0xffff)
+    return ipv6 if not compressed else str(ipaddress.IPv6Address(ipv6).compressed)

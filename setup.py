@@ -6,7 +6,7 @@ README = (HERE / "README.md").read_text()
 
 setup(
     name="ipy2d",
-    version="0.0.3",
+    version="0.0.4",
     description="Convert IP addresses to integers",
     long_description=README,
     long_description_content_type="text/markdown",
