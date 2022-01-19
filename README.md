@@ -1,5 +1,7 @@
 ## ipy2d
 
+[![ipy2d on pypi](https://badgen.net/pypi/v/ipy2d)](https://pypi.org/project/ipy2d/)
+
 A small library to convert IP addresses to integers
 
 ### Usage
