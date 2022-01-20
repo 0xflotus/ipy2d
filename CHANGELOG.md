@@ -1,3 +1,9 @@
+# v0.0.7
+
+## Features
+
+* Added CHANGELOG.md and devlopment.md
+
 # v0.0.6
 
 ## Features
