@@ -14,6 +14,7 @@ print(convert.to_4(134744072)) # -> 8.8.8.8
 
 print(convert.from_6("::1")) # -> 1
 print(convert.to_6(1051570404137199630024704)) # -> 0000:0000:0000:dead:beef:0000:0000:0000
+print(convert.to_6(1051570404137199630024704, compressed=True)) # -> ::dead:beef:0:0:0
 ```
 
 #### Development
