@@ -52,7 +52,7 @@ def test_compressed_ipv6():
     ), "Should be ::dead:beef:0:0:0"
 
 
-@pytest.mark.skip(reason="this test takes to long!")
+@pytest.mark.skip(reason="this test takes too long!")
 def test_all_ipv4():
     ints = [i for i in range(0x00, 0x100)]
     for i1 in ints:
