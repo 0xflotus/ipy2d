@@ -22,5 +22,5 @@ setup(
     packages=["ipy2d"],
     include_package_data=True,
     install_requires=["netaddr"],
-    tests_require=['pytest'],
+    tests_require=["pytest"],
 )
