@@ -15,4 +15,5 @@ jobs:
         with:
           python-version: '3.10' 
       - run: python3 setup.py install
+      - run: pip3 install pytest
       - run: pytest
