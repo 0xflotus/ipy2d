@@ -3,7 +3,7 @@ name = "ipy2d"
 version = "0.1.0"
 description = "Convert IP addresses to integers"
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 authors = [{name = "0xflotus", email = "0xflotus+pypi@gmail.com"}]
 license = {text = "MIT"}
 classifiers = [
