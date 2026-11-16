@@ -9,3 +9,11 @@ updates:
     labels:
       - "github_actions"
     open-pull-requests-limit: 5
+    reviewers:
+      - "0xflotus"
+  - package-ecosystem: uv
+    directory: "/"
+    schedule:
+      interval: "daily"
+    reviewers:
+      - "0xflotus"
