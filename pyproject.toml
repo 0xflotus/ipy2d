@@ -1,0 +1,23 @@
+[project]
+name = "ipy2d"
+version = "0.1.0"
+description = "Convert IP addresses to integers"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{name = "0xflotus", email = "0xflotus+pypi@gmail.com"}]
+license = {text = "MIT"}
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["ipy2d"]
+
+[dependency-groups]
+dev = ["pytest>=8"]
