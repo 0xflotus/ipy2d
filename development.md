@@ -1,6 +1,6 @@
 #### Development
 
-* Install dependencies from `setup.py` `python3 setup.py install`
+* Install dependencies with uv: `uv sync --group dev`
 
 #### Lint and Format
 
@@ -10,7 +10,7 @@
 
 #### Test
 
-If `pytest` is installed, you can run `pytest -rxXs test/*`
+Run the test suite with uv: `uv run --group dev pytest -rxXs test/*`
 
 #### Deploy
 

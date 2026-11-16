@@ -1,8 +1,8 @@
 test:
-    pytest
+    uv run --group dev pytest
 
 install:
-    python3 setup.py install
+    uv pip install -e .
 
 fmt:
     black ipy2d/ test/
