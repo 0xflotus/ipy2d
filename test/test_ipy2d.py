@@ -52,6 +52,20 @@ def test_compressed_ipv6():
     ), "Should be ::dead:beef:0:0:0"
 
 
+def test_invalid_addresses_and_out_of_range_integers():
+    with pytest.raises(ValueError):
+        from_4("256.0.0.1")
+
+    with pytest.raises(ValueError):
+        from_6("not-an-ipv6-address")
+
+    with pytest.raises(ValueError):
+        to_4(1 << 32)
+
+    with pytest.raises(ValueError):
+        to_6(1 << 128)
+
+
 @pytest.mark.skip(reason="this test takes too long!")
 def test_all_ipv4():
     ints = [i for i in range(0x00, 0x100)]
